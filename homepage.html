@@ -1,0 +1,119 @@
+<!DOCTYPE html>
+<html>
+<head> 
+    <meta name="viewport" content="with=device-width, initial-scale=1.0">
+    <title>Project name</title>
+    <link rel="stylesheet" href="style.css">
+    <link rel="preconnect" href="https://fonts.googleapis.com">
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+<link href="https://fonts.googleapis.com/css2?family=Poppins:wght@200;300;400;600;700&display=swap" rel="stylesheet">
+<link rel="stylesheet" href="https://stackpath.bootstrapcdn.com/font-awesome/4.7.0/css/font-awesome.min.css">
+</head>
+<body>
+    <section class="header">
+        <nav>
+            <a href="homepage.html"><img src="images/logo.png"></a>
+            <div class="nav-links" id="navLinks">
+                <i class="fa fa-times-circle" onclick="hideMenu()"></i>
+                <ul>
+                    <li><a href="index.html">HOME</a></li>
+                    <li><a href="about.html">ABOUT</a></li>
+                    <li><a href="enroll.html">ENROLL</a></li>
+                    <li><a href="">BLOG</a></li>
+                    <li><a href="contact.html">CONTACT</a></li>
+                    <li><a href="index.html">LOGOUT</a></li>
+                </ul>
+            </div>
+            <i class="fa fa-bars" onclick="showMenu()"></i>
+        </nav>
+<div class="text-box">
+    <h1>Earn your own view</h1>
+    <p>Control on what you want to see rather what you are shown. Don't let others capitalize on your personal data.
+      <br>  Earn from your personal data and keep it safe from third party websites.
+    </p>
+    <a href="" class="hero-btn">Click here to know more</a>
+</div>
+</section>
+<!----Enroll---->
+
+<section class="aboutservices">
+    <h1>Learn about services</h1>
+    <p>Find out about the services by clicking on below services</p>
+
+    <div class="row">
+        <div class="aboutservices-col">
+            <h3>Protect your Data</h3>
+            <p> Blocking Ads<br> Blocking all the cookies</p>
+        </div>
+        <div class="aboutservices-col">
+            <h3>Earn from your view</h3>
+            <p>Rewarding for every new Ad</p>
+        </div>
+        <div class="aboutservices-col">
+            <h3>Control what you want to see</h3>
+            <p>Showing our ads in the place of the blocked Ads <br> Monitoring how many impressions we are getting
+                on a particularEarn from your view Ad</p>
+
+        </div>
+    </div>
+</section>
+
+<!--objectives-->
+<section class="objectives">
+    <h1>objectives of the Product</h1>
+    <p>1. Blocking Ads<br>2. Blocking all the cookies<br>3. Showing our ads in the place of the blocked Ads<br>4. Monitoring how many impressions we are getting
+    on a particular Ad example: The interest is helthcare, the number of people who watches the Ads of healthcare should be monitored.<br>5. Rewarding for every
+    new Ad</p>
+    <div class="row">
+        <div class="objectives-col">
+            <img src="images/ad.png">
+            <div class="layer">
+                <h3>Control what you want to see</h3>
+            </div>
+        </div>
+        <div class="objectives-col">
+            <img src="images/earnad.png">
+            <div class="layer">
+                <h3>Earn from your view</h3>
+            </div>
+        </div>
+        <div class="objectives-col">
+            <img src="images/dataprotect.png">
+            <div class="layer">
+                <h3>Protect your Data</h3>
+            </div>
+        </div>
+    </div>
+</section>
+<section>
+    
+    
+</section>
+
+<section class="contact">
+    <h1>CONTACT</h1>
+    <p>PHONE NUMBER: +91 9866995325, +91 9390729631</p>
+    <div class="icons">
+        <i class="fa fa-facebook"></i>
+        <i class="fa fa-instagram"></i>
+        <i class="fa fa-envelope"></i>
+    </div>
+    
+</section>
+
+
+
+
+<!------JavaScript for toggle menu---->
+<script>
+    var navLinks = document.getElementById("navLinks");
+    function showMenu(){
+        navLinks.style.right = "0";
+    }
+    function hideMenu(){
+        navLinks.style.right = "-200px";
+    }
+
+</script>
+</body>
+</html>

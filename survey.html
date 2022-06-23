@@ -1,0 +1,104 @@
+<!DOCTYPE html>
+<html>
+<head> 
+    <meta name="viewport" content="with=device-width, initial-scale=1.0">
+    <title>Project name</title>
+    <link rel="stylesheet" href="style.css">
+    <link rel="preconnect" href="https://fonts.googleapis.com">
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+<link href="https://fonts.googleapis.com/css2?family=Poppins:wght@200;300;400;600;700&display=swap" rel="stylesheet">
+<link rel="stylesheet" href="https://stackpath.bootstrapcdn.com/font-awesome/4.7.0/css/font-awesome.min.css">
+</head>
+<body style="background-color: lightgrey;">
+<style>
+.input{
+    padding-left: 5cm;
+}
+.label{
+    padding-left: 0.5cm;
+}
+</style>
+    <section class="sub-header">
+        <h1 style="padding-left: 10cm; padding-top: 2cm; font-family: 'Times New Roman', Times, serif; font-size: 7ch;" >Survey</h1>
+        
+            <form id="survey" action="index.html" class="input-group">
+                Age:  <input type="text" name="age" value="age"></input>   <br><br>
+                <p style="font-size: larger; color: black;">Gender</p>
+                <input type="radio" class="radio-box" name="gender" value="male"><span>      male  </span>
+                     <input type="radio" class="radio-box" name="gender" value="female" ><span>    female</span>
+                     <input type="radio" class="radio-box" name="gender" value="others" ><span>    others</span><br><br>
+                <p style="font-size: larger; color: black;">Hobbies</p>
+                <label>Sports</label>  <input style="padding-left: 1cm;" type="checkbox" name="hobbies" value="outdoorsports"> || </input>
+                <label>  Indoor Sports</label>  <input type="checkbox" name="hobbies" value="indoorsports"><br>  </input>
+                <label>  Food </label>  <input type="checkbox" name="hobbies" value="food">||</input>
+                <label>  Travel</label>   <input type="checkbox" name="hobbies" value="travel">||</input>
+                <label>  Study </label>  <input type="checkbox" name="hobbies" value="study"><br></input>
+                <label>  Fashion</label>   <input type="checkbox" name="hobbies" value="fashion">||</input>
+                <label>  Entertainment</label>  <input type="checkbox" name="hobbies" value="entertainment"></input><br><br>
+                <p style="font-size: larger; color: black;" name="outdoorsports" value="outdoorsports">Outdoor Sports</p>
+                <label>  Cricket</label>  <input type="checkbox" name="outdoorsports" value="cricket">||  </input>
+                <label>  Football<label>  <input type="checkbox" name="outdoorsports" value="football">||</input>
+                <label> Basketball </label>   <input type="checkbox" name="outdoorsports" value="basketball"></input>
+                <label>  Baseball </label>  <input type="checkbox" name="outdoorsports" value="baseball"></input>
+                <label>  Hockey</label>   <input type="checkbox" name="outdoorsports" value="hockey">||</input>
+                <label> Soccer</label>  <input type="checkbox" name="outdoorsports" value="soccer"></input><br>
+                <label> Badminton</label>  <input type="checkbox" name="outdoorsports" value="badminton"></input><br><br>
+                <p style="font-size: larger; color: black;" name="indoorsports" value="indoorsports">Indoor Sports</p>
+                <label>  Table tennis</label>  <input type="checkbox" name="indoorsports" value="tabletennis">||  </input>
+                <label>  Boxing<label>  <input type="checkbox" name="indoorsports" value="boxing"><br></input>
+                <label> Basketball </label>   <input type="checkbox" name="intdoorsports" value="basketball">||</input>
+                <label>  Bowling </label>  <input type="checkbox" name="indoorsports" value="bowling">||</input>
+                <label>  Volleyball</label>   <input type="checkbox" name="indoorsports" value="volleyball"></input>
+                <label>  Carrom</label>   <input type="checkbox" name="indoorsports" value="carrom">||</input>
+                <label> Kabaddi</label>  <input type="checkbox" name="indoorsports" value="kabaddi">||</input>
+                <label> Chess</label>  <input type="checkbox" name="indoorsports" value="chess"></input><br><br>
+
+                <p style="font-size: larger; color: black;" name="food" value="food">Food</p>
+                <label>  NorthInd</label>  <input type="checkbox" name="food" value="northindian">||  </input>
+                <label>  SouthInd<label>  <input type="checkbox" name="food" value="southindian">||</input>
+                <label> Fastfood </label>   <input type="checkbox" name="food" value="fastfood"></input>
+                <label> Asian</label>  <input type="checkbox" name="food" value="asian">||</input>
+                <label>  Continental </label>  <input type="checkbox" name="food" value="continental">||</input>
+                <label>  American</label>   <input type="checkbox" name="food" value="american"></input>
+                <label> Middle Eastern</label>  <input type="checkbox" name="food" value="middleeastern">||</input>
+                <label> Indo-chinese</label>  <input type="checkbox" name="food" value="indochinese"></input><br><br>
+
+                <p style="font-size: larger; color: black;" name="entertainment" value="entertainment">Entertainment</p>
+                <label>  Hollywood</label>  <input type="checkbox" name="entertainment" value="hollywood">||  </input>
+                <label>  Bollywood<label>  <input type="checkbox" name="entertainment" value="bollywood">||</input>
+                <label>  Netflix </label>  <input type="checkbox" name="entertainment" value="netflix"></input>
+                <label> Tollywood </label>   <input type="checkbox" name="entertainment" value="tollywood">||</input>
+                <label> K-Drama</label>  <input type="checkbox" name="entertainment" value="k-drama">||</input>
+                <label> Prime</label>  <input type="checkbox" name="entertainment" value="prime"></input>
+                <label> POP</label>  <input type="checkbox" name="entertainment" value="pop"></input>
+                <label>  Disney+hotstar</label>   <input type="checkbox" name="entertainment" value="disneyhotstar"></input><br><br>
+
+                
+                <button  type="submit" class="submit-btn" href="survey.html">Submit</button>
+            </form>
+        </nav>
+        
+
+
+
+</section>
+
+    
+
+
+
+
+
+<!------JavaScript for toggle menu---->
+<script>
+    var navLinks = document.getElementById("navLinks");
+    function showMenu(){
+        navLinks.style.right = "0";
+    }
+    function hideMenu(){
+        navLinks.style.right = "-200px";
+    }
+
+</script>
+</body>
+</html>

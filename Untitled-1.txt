@@ -1,0 +1,35 @@
+<bits/stdc++.h> 
+using namespace std;
+#define ll long long
+
+
+
+int solve(int N){
+
+    int count = 0;
+    for(int i = 1; i*i < N; i++)
+        if(N%i == 0)
+            count++;
+    if(int(sqrt(N))* int(sqrt(N)) == N)
+        return 2*count+1;
+    return 2*count;
+}
+
+
+
+int main() {
+  
+   ios_base::sync_with_stdio(false);
+   cin.tie(NULL);
+   
+   int t; 
+   cin>>t;
+   
+   while(t--){
+       int N; cin>>N;
+       cout<< solve(N-1)<<endl;
+   }
+   
+   
+return 0;
+}
